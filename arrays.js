@@ -8,16 +8,17 @@ function addElementToBeginningOfArray(array, element){
 
 
 function destructivelyAddElementToBeginningOfArray(array, element){
-  retarray.unshift(element);
+  array.unshift(element);
+  return array;
 }
 
 function addElementToEndOfArray(array, element){
-  const moreArray = [array, ...element]
-  return moreArray;
+  return [array,...element];
 }
 
 function destructivelyAddElementToEndOfArray(array, element){
-  return array.push(element);
+  array.push(element);
+  return array;
 }
 
 function accessElementInArray(array, index){
